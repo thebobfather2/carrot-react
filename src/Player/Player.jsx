@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import './player.scss';
+import './player.css';
 import {ethers} from 'ethers';
 import {BsFillPlayCircleFill, BsFillPauseCircleFill, BsFillSkipStartCircleFill, BsSkipEndCircleFill, BsFillSkipEndCircleFill} from 'react-icons/bs';
 
@@ -126,7 +126,7 @@ useEffect(() => {
       </div>
       <div className="controls">
         <BsFillSkipStartCircleFill className='btn_action' onClick={skipBack}/>
-        {isplaying ? <BsFillPauseCircleFill className='btn_action pp' onClick={PlayPause}/> : <BsFillPlayCircleFill className='btn_action pp' onClick={PlayPause}/>}
+        {isplaying ? <BsFillPauseCircleFill className='btn_action_pp' onClick={PlayPause}/> : <BsFillPlayCircleFill className='btn_action_pp' onClick={PlayPause}/>}
         <BsFillSkipEndCircleFill className='btn_action' onClick={skiptoNext}/>
       </div>
       

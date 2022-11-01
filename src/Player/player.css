@@ -11,7 +11,9 @@
 }
 
 .title {
-    color: beige;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    font-size: 4vw !important;
 }
 
 .player_container
@@ -28,7 +30,7 @@
     justify-content: space-between;
     background-color: black;
     box-shadow: 15px 15px #00000062;
-    
+}   
 
     @media screen and (max-width: 700px) {
         .walletCard {
@@ -43,19 +45,10 @@
         .title {
             padding-top: 80px;
         }
-    }
-    >*
-    {
-        padding: 1rem 0;
-        color: rgb(202, 202, 202);
-    }
 
-    .title{
-        font-size: inherit;
-    }
     .navigation{
         width: 100%;
-
+    }
 
         .navigation_wrapper
         {
@@ -64,7 +57,7 @@
             height: 5px;
             border-radius: 30px;
             cursor: pointer;
-            
+        }
             .seek_bar{
                 width: 0;
                 height: 100%;
@@ -72,31 +65,24 @@
                 border-radius: 30px;
             }
 
-        }
-    }
     .controls{
         font-size: inherit;
         display: flex;
         align-items: center;
-
+    }
         .btn_action
         {
             font-size: 2rem;
             margin: 0 1rem;
             cursor: pointer;
-
-            &:hover{
+        }
+            .btn:hover{
             color: white;
         }
-
-        }
+    }
         
-        .pp
+        .btn_action_pp
         {
-            font-size: 4rem;
+            font-size: 1rem;
             
         }
-        
-    }
-
-}

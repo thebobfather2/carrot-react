@@ -59,6 +59,9 @@ const Marketplace: React.FC = () => {
               wallet={wallet}
               candyShop={candyShopRef.current}
               walletConnectComponent={<WalletMultiButton />}
+              filters={FILTERS}
+              filterSearch
+              search
             />
             <h2
               style={{
@@ -69,7 +72,7 @@ const Marketplace: React.FC = () => {
                 padding: "10px",
               }}
             >
-              List your ownership in tracks for sale:
+              List your shares for sale:
             </h2>
             <Sell
               wallet={wallet}
@@ -91,6 +94,12 @@ const Marketplace: React.FC = () => {
 };
 
 export default Marketplace;
+
+const FILTERS = [
+  { name: "Almond Butter", collectionId: "1", identifier: 720991198 },
+  { name: "Fourth Dimensional Thinking", collectionId: "2", identifier: 1615734886 },
+  { name: "Under The Sun", collectionId: "3", identifier: -501266459 },
+];
 
 const DesContainer = styled.div`
   width: 100%;
