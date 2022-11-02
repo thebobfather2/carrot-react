@@ -20,8 +20,6 @@ import Navbar2 from "./components/Navbar2";
 import VSNHome from "./components/VSNHome";
 import VSNRadio from "./VSNRadio";
 import Marketplace from "./Pages/Marketplace";
-
-import Dashboard from "./Pages/Dashboard";
 import Home from "./Pages/Home";
 
 
@@ -95,8 +93,6 @@ const Content: FC = () => {
         <Route path="/VSNHome" element={<VSNHome />} />
         <Route path="/VSNRadio" element={<VSNRadio />} />
         <Route path="/Marketplace" element={<Marketplace />} />
-        
-        <Route path="/Dashboard" element={<Dashboard />} />
       </Routes>
     </>
   );
