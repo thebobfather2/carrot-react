@@ -1,5 +1,6 @@
 import { CandyShopDataValidator, Orders, Sell, Stat } from "@liqnft/candy-shop";
 import { CandyShop } from "@liqnft/candy-shop-sdk";
+import { color } from "@mui/system";
 import { useAnchorWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { useRef } from "react";
@@ -24,7 +25,7 @@ const Marketplace: React.FC = () => {
       env: NETWORK,
       // pass additional settings param to configure shop display
       settings: {
-        currencySymbol: "$SOL",
+        currencySymbol: "SOL",
         currencyDecimals: 9,
         priceDecimals: 2,
         volumeDecimals: 1,
@@ -37,14 +38,16 @@ const Marketplace: React.FC = () => {
       {wallet ? (
         <CandyShopDataValidator>
           <DesContainer>
+          <div className="MktTitle">
             <Stat
               candyShop={candyShopRef.current}
               title={"Music Marketplace"}
-              description={"Purchace shares of ownership in your favorite tracks!"}
+              description={"purchase shares of ownership in your favorite tracks!"}
               style={{ paddingBottom: 50 }}
             />
+          </div>
 
-            <h2
+            <h2 className="MktSubtitle"
               style={{
                 marginBottom: "20px",
                 background: "black",
@@ -53,17 +56,21 @@ const Marketplace: React.FC = () => {
                 padding: "10px",
               }}
             >
-              Purchace shares of ownership in your favorite tracks!
+              Purchase Music Rights ( 1 NFT = 1% ):
             </h2>
-            <Orders
-              wallet={wallet}
-              candyShop={candyShopRef.current}
-              walletConnectComponent={<WalletMultiButton />}
-              filters={FILTERS}
-              filterSearch
-              search
-            />
-            <h2
+            
+            <div className="Body">
+              <Orders
+                wallet={wallet}
+                candyShop={candyShopRef.current}
+                walletConnectComponent={<WalletMultiButton />}
+                filters={FILTERS}
+                filterSearch
+                search
+              />
+            </div>
+
+            <h2 className="MktSubtitle"
               style={{
                 marginBottom: "20px",
                 background: "black",
@@ -72,14 +79,16 @@ const Marketplace: React.FC = () => {
                 padding: "10px",
               }}
             >
-              List your shares for sale:
+              List Your Rights For Sale:
             </h2>
-            <Sell
-              wallet={wallet}
-              candyShop={candyShopRef.current}
-              walletConnectComponent={<WalletMultiButton />}
-              enableCacheNFT={true}
-            />
+            <div className="Body">
+              <Sell
+                wallet={wallet}
+                candyShop={candyShopRef.current}
+                walletConnectComponent={<WalletMultiButton />}
+                enableCacheNFT={true}
+              />
+            </div>
           </DesContainer>
         </CandyShopDataValidator>
       ) : (

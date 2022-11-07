@@ -6,7 +6,6 @@ import {
 } from "@solana/wallet-adapter-react-ui";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import br from "./img/poweredwhite.png";
 import Logo from "./img/vsn.png";
 import youtube from "./img/youtube.png";
 import twitter from "./img/twitter.png";
@@ -39,7 +38,7 @@ const Navbar = () => {
       {toggleMenu || screenWidth > 755 ? (
         <>
           <Link to="/">
-            <img className="navlogo" src={br} alt="logo" />
+            <img className="navlogo" src={Logo} alt="logo"/>
           </Link>
           <ul className="list"close>
             <br></br>
@@ -83,6 +82,19 @@ const Navbar = () => {
                 }}
               >
                 Marketplace
+              </h1>
+            </Link>
+            <br></br>
+
+            <Link to="/Dashboard" onClick={toggleNav}>
+              <h1
+                style={{
+                  textDecoration: "underline",
+                  fontSize: "1.8em",
+                  color: "orange",
+                }}
+              >
+                Dashboard
               </h1>
             </Link>
             <br></br>

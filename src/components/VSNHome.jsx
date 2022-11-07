@@ -17,12 +17,32 @@ const VSNHome = () => {
       image: vsn,
       path: "/Marketplace",
     },
+    {
+      name: "Dashboard",
+      image: vsn,
+      path: "/Dashboard",
+    },
 
   ];
   return (
     <div className="partnersMain" style={{marginTop: "20px"}}>
 
-<h1 className="Title">Welcome To Vibe Stream Network</h1>
+  <h1 className="Title">Welcome To VSN</h1>
+
+      <div className="TextBox">
+        
+        <h3 className="subTitle" style={{marginBottom: "30px"}}>What is Vibe Stream Network?</h3>
+      
+          <h4>Vibe Stream Network is more than a music marketplace... it's a music RIGHTS marketplace! Every master listed on our marketplace will be broken down into 100 NFTs - each NFT represents 1% ownership in the track.
+          Simple, right? Now imagine - every dollar earned, from Spotify streaming revenue to a fat check for licensing the song to a tv show or commercial, will be divided by 100 and airdropped straight to the owners. 
+          Our proprietary technology will use the security of blockchain verification to air drop proportionally to owners in an instant. No more vague contracts, no more waiting on "business days" to receive a direct deposit. Owning 5 NFTs of
+          a single track means you own 5%, and will get 5% of every dollar of profit dropped straight into your wallet. This is how we plan to change the music business with Web3.</h4>
+        
+        </div>  
+
+  <div className="Explore">
+
+  <h3 className="subTitle2" style={{marginBottom: "30px"}}>Explore VSN</h3>
 
       <div className="partnerContainer">
         {partners.map((partner) => {
@@ -31,8 +51,6 @@ const VSNHome = () => {
               <div
                 style={{
                   backgroundColor: partner.primaryColor,
-                  padding: "20px",
-                  margin: "10px",
                   borderRadius: "10px",
                 }}
                 className="partnerCard"
@@ -49,25 +67,22 @@ const VSNHome = () => {
           );
         })}
       </div>
-
-      <h4 className="TextBox">
+  </div>
+      <div className="MissionBox">
         
-        <h3 className="subTitle">What is Vibe Stream Network?</h3>
-      
-          Vibe Stream Network is more than a music marketplace... it's a music RIGHTS marketplace! Every master listed on our marketplace will be broken down into 100 NFTs - each NFT represents 1% ownership in the track.
-          Simple, right? Now imagine - every dollar earned, from Spotify streaming revenue to a fat check for licensing the song to a tv show or commercial, will be divided by 100 and airdropped straight to the owners. 
-          Our proprietary technology will use the security of blockchain verification to air drop proportionally to owners in an instant. No more vague contracts, no more waiting on "business days" to receive a direct deposit. Owning 5 NFTs of
-          a single track means you own 5%, and will get 5% of every dollar of profit dropped straight into your wallet. This is how we plan to change the music business with Web3.
-      </h4>  
+      <h3 className="subTitle3">Our Mission</h3>
 
-      <h4 className="TextBox">
-        
-      <h3 className="subTitle">Our Mission</h3>
+        <div className="MissionStatement">
       
-      Our mission is TBD 
+          VSN is in the business of community-owned entertainment. We address the lack of
+          opportunities and accessibilities for both users and creators by utilizing blockchain
+          technology to innovate new financial systems, using technology to bridge the gap.
+         
           <br></br>
+
           <h4 style={{marginTop: "30px"}}>-The VSN Team</h4>
-          </h4>
+        </div>
+      </div>
 
     </div>
 

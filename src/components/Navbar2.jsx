@@ -1,9 +1,6 @@
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Dropdown from "./Dropdown";
-import Dropdown2 from "./Dropdown2";
-import Dropdown3 from "./Dropdown3";
 import Logo from "./img/vsn.png";
 import twtr from "./img/twitter.png";
 import youtube from "./img/youtube.png";
@@ -114,6 +111,18 @@ function Navbar() {
               onClick={closeMobileMenu}
             >
               Marketplace <i className="fas fa-caret-down" />
+            </Link>
+          </li>
+
+          <li
+            className="nav-item"
+          >
+            <Link
+              to="/Dashboard"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Dashboard <i className="fas fa-caret-down" />
             </Link>
           </li>
 

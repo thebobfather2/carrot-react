@@ -75,8 +75,7 @@ const Player = ({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
       
       <div className='walletCard'>
       <Link to="/Marketplace">
-          <img src={buybtn} className="Button"/>
-          <h2 className='linktext'>Purchase rights to this track</h2>
+          <div className='buybutton'>Purchase Music Rights</div>
           <i/>
         </Link>
 		</div>

@@ -71,7 +71,7 @@
 }
 .wallet-adapter-button-trigger {
   margin-right: 10px !important;
-  font-size: 0.9rem !important;
+  font-size: 1.2rem !important;
   min-width: 150px;
   justify-content: center;
 }
@@ -80,7 +80,7 @@
     background-color: transparent !important;
     height: 40px;
     width: 180px;
-    font-size: 0.6em !important;
+    font-size: 0.9em !important;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

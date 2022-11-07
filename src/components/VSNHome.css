@@ -9,31 +9,83 @@
 
 .Title {
   font-family: 'Permanent Marker', cursive;
-  font-size: 4.5vw;
+  font-size: 7.5vw;
   font-weight: bolder;
-  color: white;
-  text-shadow: 5px 5px #000000;
+  color: rgb(255, 210, 8);
+  text-shadow: 6px 6px #d36600;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .subTitle {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 3.5vw;
+  font-family: 'Poor Story', cursive;
+  font-size: 4.5vw;
   font-weight: bolder;
   color: white;
-  text-shadow: 5px 5px #000000;
+  text-shadow: 3px 3px #000000;
+  margin-bottom: 20px;
+}
+
+.subTitle2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 6.5vw;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 3px 3px #000000;
+}
+
+.subTitle3 {
+  font-family: 'Poor Story', cursive;
+  font-size: 4.5vw;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 3px 3px #000000;
   margin-bottom: 20px;
 }
 
 .TextBox {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2.3vw;
   border-radius: 20px;
   margin-top: 0px;
   margin-bottom: 50px;
-  width: 80%;
+  width: 90%;
   color: white;
   padding: 10px;
-  text-shadow: 1px 1px #000000;
+  text-shadow: 2px 2px #000000;
 }
 
+.Explore {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 90%;
+  border-radius: 20px;
+  background-color: #5e5e5e40;
+  justify-content: center;
+}
+
+.MissionBox {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5vw;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 90%;
+  color: white;
+  padding: 10px;
+  text-shadow: 2px 2px #000000;
+}
+
+.MissionStatement {
+  font-size: 1.3vw;
+  background-color: black;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* unsure whats below */
 .launchMain {
   min-height: 40vh;
   display: flex;
@@ -60,16 +112,24 @@
   justify-content: center;
   color: rgb(0, 0, 0);
 }
+
 .partnerContainer {
+  font-size: 4vh;
+  text-shadow: 3px 3px #000000;
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  padding: 20px;
   justify-content: center;
   align-items: center;
 }
 
+.partnerCard {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .partnerCard:hover {
+  padding-top: 30px;
+  padding-bottom: 30px;
   cursor: pointer;
   background-color: #70707062;
   box-shadow: 8px 8px #00000062;
@@ -87,12 +147,16 @@
 
 .partnerimg {
   border-radius: 20px;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   box-shadow: 8px 8px #00000062;
 }
 
 @media screen and (max-width: 700px) {
+
+  .partnerContainer {
+    text-shadow: 3px 3px #000000;
+  }
   
   .Launch {
     width: 80%;
@@ -110,29 +174,31 @@
     font-size: 10vw;
     font-weight: bolder;
     color: white;
-    text-shadow: 2px 2px #000000;
+    text-shadow: 4px 4px #000000;
   }
   
   .subTitle {
-    background-color: gray;
     border-radius: 5px;
     padding: 5px;
     font-family: 'Permanent Marker', cursive;
-    font-size: 6vw;
+    font-size: 9vw;
     font-weight: bolder;
     color: white;
-    text-shadow: 2px 2px #000000;
+    text-shadow: 2px 4px #686767;
     margin-bottom: 20px;
   }
 
   .TextBox {
+    font-size: 6vw;
     background-color: black;
     border-radius: 20px;
     margin-top: 15px;
     margin-bottom: 50px;
     width: 80%;
     color: white;
-    padding: 50px;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-shadow: 1px 1px #000000;
     box-shadow: 8px 8px #00000062;
   }

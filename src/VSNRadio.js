@@ -29,15 +29,7 @@ function VSNRadio() {
   }
 
   return (
-  <div className="VSNRadio" style={{marginBottom: "0px"}}>
-  <img style={{
-              maxWidth: "300px", 
-              marginTop: "50px", 
-              marginBottom: "50px", 
-              borderRadius: "20px",
-              boxShadow: "0.2em 0.2em 0 0.2em rgba(0,0,0,0.17)",
-              }} 
-    src={logo} alt='vsn logo'/>
+  <div className="VSNRadio">
 
     <div className="Player">
       <audio src={currentSong.url} ref={audioElem} onTimeUpdate={onPlaying} />

@@ -1,0 +1,404 @@
+.DashboardMain {
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.DashboardTitle {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    text-shadow: 5px 5px #000000;
+    font-size: 12vh !important;
+    text-align: center;
+    margin-top: -100px;
+}
+
+.NoPass {
+    padding-top: 50px;
+    font-size: 7vh;
+    color: white;
+    text-shadow: 3px 3px #000000;
+}
+
+.wallet-adapter-button-trigger {
+    background-color: black !important;
+    border: 2px solid rgb(255, 255, 255) !important;
+}
+
+.wallet-adapter-button-trigger:not([disable]) {
+    background-color: transparent !important;
+    height: 40px;
+}
+
+.wallet-adapter-button-trigger:not([disable]):hover {
+    background-color: orange !important;
+    border: 2px solid rgb(255, 255, 255) !important;
+}
+
+.wallet-adapter-modal-wrapper {
+    background-color: rgb(206, 137, 9) !important;
+}
+.selectWallet{
+    
+    border: 1px white solid;
+    text-align: center !important;
+}
+.selectWallet:hover{
+    background-color: rgb(253, 184, 55) !important;
+}
+.DashboardMainContainer{
+    /* background-color: rgba(0, 0, 0, 0.685); */
+    /* background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%); */
+    width: 90%;
+    margin-top: 60px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.DashboardTitle{
+    font-size: 1.5em;
+    position: absolute;
+    top: -50px;
+}
+.DashboardTop{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.pricesContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 72%;
+    margin: auto;
+}
+.RabbitHouse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px 2px black;
+    position: relative;
+}
+.Tokens{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 20px;
+    
+}
+.alphaNFTs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.Wholeshebang{
+    display: flex;
+    flex-direction: row;
+}
+.tokenAddress{
+    margin: 5px;
+    
+}
+.BobbyRabbits{
+    max-width: 80px;
+    margin: 5px;
+}
+.RightSideTop{
+    display: flex;
+    flex-direction: column; 
+    padding: 50px;
+    height: 200px;
+    margin-top: -50px;
+}
+.charts{
+    background-color: rgb(168, 5, 5);
+    border-radius: 20px;
+    padding: 20px;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: fit-content;
+    justify-content: center;
+}
+.chart{
+    height: 300px;
+    padding-bottom: 50px;
+}
+.custom-tooltip{
+    background-color: rgb(209, 0, 0);
+    padding-left:  10px;
+    padding-right:  10px;
+    border-radius: 4px;
+    border: 1px white solid;
+}
+.Wallets{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    box-shadow: 0 0 10px 2px black;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 400px;
+    max-height: 120px;
+    margin-bottom: 35px;
+    padding-left: 20px;
+}
+.walletsIcon .hoverText{
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    padding: 5px;
+    background-color: white;
+    border-radius:5px;
+    display: none;
+    width: 60px;
+    animation: fade-in .5s;
+}
+.walletsIcon:hover .hoverText{
+    animation: fadeIn .5s;
+    display: block;
+    width: 100px;
+    font-size: .7em;
+}
+
+.coins{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    box-shadow: 0 0 10px 2px black;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    max-height: 90px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.coinInfo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.walletsIconImage{
+    max-width: 30px;
+}
+.walletsIcon:hover{
+cursor: pointer;
+animation: gelatine 0.4s;
+}
+
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.98, 1.02); }
+    50% { transform: scale(1.02, 0.98); }
+    75% { transform: scale(0.99, 1.01); }
+  }
+.walletsIcon{
+position: absolute;
+background-color: white;
+border-radius: 10px;
+padding: 5px;
+top: -20px;
+left: 10px;
+z-index: 5;
+}
+.walletprices{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.walletInfo{
+    display: flex;
+    margin-top: 30px;
+}
+.walletUSD{
+    
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+.MyRabbitsText{
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.showRabbits{
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    box-shadow: 0 0 4px 1px black;
+    margin-bottom: 0px !important;
+}
+
+.showRabbits:hover{
+    background-color: orange !important;
+    animation: gelatine 0.8s;
+}
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.98, 1.02); }
+    50% { transform: scale(1.02, 0.98); }
+    75% { transform: scale(0.99, 1.01); }
+  }
+  .rabbitsDisplay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.795);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .miniGallery{
+    max-width: 80%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    box-shadow: 0 0 4px 1px black;
+    padding: 100px;
+    position: relative;
+    border-radius: 20px;
+  }
+  .closeModal{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .Table{
+    height: 100%;
+    width: 100%;
+  }
+  .TableHeadings{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .Divider{
+    height: 2px;
+    width: inherit;
+    background-color: black;
+  }
+  .Transfers{
+    display: flex;
+    justify-content: space-between;
+  }
+  .hidden{
+    color: transparent;
+    
+  }
+  .links{
+    color: white;
+    text-decoration: underline;
+  }
+  .headings{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+  }
+
+  @media screen and (max-width: 900px) {
+   .Wallets{
+    min-width: 100%;
+   }
+    .DashboardTop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .RightSideTop{
+        margin-top: 5px;
+    }
+    .pricesContainer{
+        margin-top: 200px;
+        width: 90%
+    }
+    .DashboardMainContainer{
+        width: 75%;
+    }
+  }
+  @media screen and (max-width: 930px ) {
+    .miniGallery{
+        width: 350px;
+        height: fit-content;
+        display: block;
+        overflow-y: scroll;
+    }
+    .alphaNFTs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+    .Wholeshebang{
+        display: flex;
+        flex-direction: column;
+    }
+    
+  }
+  @media screen and (max-width: 500px) {
+    .DashboardBottom{
+        display: none;
+    }
+    .DashboardMainContainer{
+        width: 90%;
+    }
+    .pricesContainer{
+        margin-top: 300px;
+    }
+    .miniGallery{
+        max-width: 50%;
+        height: fit-content;
+        display: block;
+        overflow-y: scroll;
+    }
+    .Wallets{
+        padding-right: 15px;
+    }
+    
+  }

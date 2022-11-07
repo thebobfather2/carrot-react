@@ -1,4 +1,5 @@
 .CarotMarketMain {
+    font-family: 'Permanent Marker', cursive;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -6,4 +7,26 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    font-size: 3vh;
+}
+
+.MktTitle {
+    font-family: 'Permanent Marker', cursive;
+    color: #ffffff;
+    text-shadow: .7vh .7vh #ffbb00;
+    font-size: 8vw !important;
+}
+
+.MktSubtitle {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2vw;
+}
+
+.Body {
+    font-family: 'Rubik', sans-serif;
+    font-size:1.2vw;
+    text-shadow: none;
+    padding: 20px;
 }
