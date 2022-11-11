@@ -22,7 +22,7 @@
     }
 
     .title{
-        font-size: 3.5vw;
+        font-size: 5.5vw;
     }
     .navigation{
         width: 100%;
@@ -80,7 +80,7 @@
 
 .buybutton {
     background-color: #db8400;
-    font-size: 2vw;
+    font-size: 4vw;
     border-width: 5px;
     padding: 30px;
     border-style: double;
@@ -93,4 +93,43 @@
 .Button {
     min-width: 20vw;
 }
+
+.transactionBtn {
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 3vw;
+    background-color: #db8400;
+    border-width: 5px;
+    border-style: double;
+    border-color: #ffffff;
+    border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+}
+
+.Warning {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 2vw;
+}
+
+.clicked {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    top: 0;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    opacity: 70%;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.success {
+    text-shadow: 0px 0px #000000;
+}
+
 }

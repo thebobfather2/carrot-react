@@ -1106,7 +1106,7 @@ const Dashboard = () => {
         <br></br>
         <h1 className="NoPass">No VSN Pass Detected</h1>
         <Button
-          href="https://magiceden.io/marketplace/bobbyrabbits"
+          href="https://vibestreamnetwork.vercel.app/#/VSNHome"
           target="_blank"
           rel="noreferrer"
           style={{ width: "80%", fontSize: "4vh" }}
@@ -1118,11 +1118,11 @@ const Dashboard = () => {
   } else {
     return (
       <div className="DashboardMain">
-        <h1 className="DashboardTitle">Holder's Dashboard</h1>
+        <h1 className="DashboardTitle">VSN Dashboard</h1>
         <br></br>
         <br></br>
         <h3 className="ConnectWallet">
-          Connect Wallet Containing Bobby Rabbit's NFT for Access
+          Connect Wallet Containing VSN Pass NFT for Access
         </h3>
         <WalletMultiButton className="selectWallet" />
       </div>
