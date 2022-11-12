@@ -12,7 +12,7 @@ exports.songsdata = [
     {
         "title": "VSN - Under The Sun",
         "url": "https://audio.jukehost.co.uk/1veHTiKVm9MkYCLYUQ1mjAv3Jwmg8EA7",
-        "address1": "0xUnderTheSun 1",
+        "address": "0xUnderTheSun 1",
         "address2": "0xUnder 2",
         "wallet 3": "0x1730000098098y098098r7098"
     }
