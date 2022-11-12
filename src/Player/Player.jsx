@@ -34,7 +34,7 @@ const Player = ({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
   const feeAddress = new PublicKey('CK3Dam3dsMUdupHXDYJwBkzPjLe6NHZ9GHC2LMCLxTYV')
 
   //Set Solana Fee (Solana has 9 decimals, 100_000_000 = 0.1 Solana)
-  let upgradeFee = 123_000_000
+  let upgradeFee = 69_000_000
 
   const fetchMetadata = useCallback(async () => {
     for (const nft of nfts) {
@@ -196,7 +196,7 @@ const Player = ({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
                 onClick={onSPLClick}
                 disabled={!publicKey}
                 >
-                  Tip 0.123 SOL!
+                  Pity Button&reg;
               </Button>
                 ) : (
               <Button
