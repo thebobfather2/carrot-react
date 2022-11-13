@@ -1,10 +1,10 @@
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "./img/vsn.png";
+import Logo from "../images/bunnyhead.png";
 import twtr from "./img/twitter.png";
 import youtube from "./img/youtube.png";
-import twitch from "./img/twitch.png";
+import magiceden from "../images/MELogo.png";
 import "./Navbar2.css";
 
 function Navbar() {
@@ -66,23 +66,23 @@ function Navbar() {
     <>
       <nav className="navbar">
 
-        <Link to="/VSNHome" className="navbar-logo" onClick={closeMobileMenu}>
+      <a href="https://www.bobbyrabbits.com/" className="navbar-logo" onClick={closeMobileMenu}>
           <img src={Logo} className="Nav-Logo" />
           <i class="fab fa-firstdraft" />
-        </Link>
+        </a>
 
-        <a href="https://twitter.com/VibeStreamNet" className="navbar-logo" onClick={closeMobileMenu}>
+        <a href="https://twitter.com/bobbyrabbits" className="navbar-logo" onClick={closeMobileMenu}>
           <img src={twtr} className="Nav-Logo" />
           <i class="fab fa-firstdraft" />
         </a>
 
-        <a href="https://www.youtube.com/channel/UCuQMtadkhjYL9ZTtmqMRtng/videos" className="navbar-logo" onClick={closeMobileMenu}>
+        <a href="https://www.youtube.com/c/BobbyRabbitsNFT" className="navbar-logo" onClick={closeMobileMenu}>
           <img src={youtube} className="Nav-Logo" />
           <i class="fab fa-firstdraft" />
         </a>
 
-        <a href="https://www.twitch.tv/vibestreamnetwork" className="navbar-logo" onClick={closeMobileMenu}>
-          <img src={twitch} className="Nav-Logo" />
+        <a href="https://magiceden.io/creators/bobbyrabbits/" className="navbar-logo" onClick={closeMobileMenu}>
+          <img src={magiceden} className="Nav-Logo" />
           <i class="fab fa-firstdraft" />
         </a>
 
@@ -90,41 +90,7 @@ function Navbar() {
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li
-            className="nav-item"
-          >
-            <Link
-              to="/VSNRadio"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              VSN Radio <i className="fas fa-caret-down" />
-            </Link>
-          </li>
-          
-          <li
-            className="nav-item"
-          >
-            <Link
-              to="/Marketplace"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Marketplace <i className="fas fa-caret-down" />
-            </Link>
-          </li>
 
-          <li
-            className="nav-item"
-          >
-            <Link
-              to="/Dashboard"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Dashboard <i className="fas fa-caret-down" />
-            </Link>
-          </li>
 
         </ul>
         <WalletMultiButton/>
