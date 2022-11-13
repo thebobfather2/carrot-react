@@ -2,5 +2,5 @@
 
 ## Instructions on how to install coming soon!
 
-Powere by Bobby Rabbits
+Powered by Bobby Rabbits
 
