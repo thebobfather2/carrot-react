@@ -1,0 +1,58 @@
+.ignoreContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 125px;
+}
+
+.title {
+    font-size: 5.5vw;
+}
+
+.pityBtn {
+    align-self: center;
+    text-transform: none !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    font-size: 6vh !important;
+    background-color: #db8400 !important;
+    border-width: 5px !important;
+    border-style: double !important;
+    border-color: #ffffff !important;
+    border-radius: 20px !important;
+    font-family: 'Rubik', sans-serif !important;
+    color: #ffffff !important;
+    text-shadow: 2px 2px #000000;
+    box-shadow: -12px 30px #00000045;
+}
+
+.result {
+    margin-top: 25px;
+}
+
+.donate {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 4vh !important;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .ignoreContainer {
+        margin-top: 50px;
+    }
+
+    .donate {
+        width: 80%;
+        font-size: 3vh;
+    }
+}
