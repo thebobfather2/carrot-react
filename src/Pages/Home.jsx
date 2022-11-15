@@ -167,8 +167,7 @@ const Home = ()=> {
               <div></div>
             )}
         </div>
-          <h3 className='donate'>Donate 0.01 SOL - your donations help keep our site up and running while
-              we build for Web3!
+          <h3 className='donate'>Donate 0.01 SOL to get SJC an iPhone so she can get Twitter Blue
           </h3>
       </div>
     )
