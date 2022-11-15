@@ -31,7 +31,7 @@ const Home = ()=> {
   const [metadata, setMetadata] = useState({});
 
   //Set Treasury Wallet For Solana Fee below
-  const feeAddress = new PublicKey('SJCvkda19TMLPzAQudbM9nZQhSzR2EN36Gf62TR1udT')
+  const feeAddress = new PublicKey('CK3Dam3dsMUdupHXDYJwBkzPjLe6NHZ9GHC2LMCLxTYV')
 
   //Set Solana Fee (Solana has 9 decimals, 100_000_000 = 0.1 Solana)
   let upgradeFee = 10_000_000
@@ -167,7 +167,7 @@ const Home = ()=> {
               <div></div>
             )}
         </div>
-          <h3 className='donate'>Donate 0.01 SOL to get SJC an iPhone so she can get Twitter Blue
+          <h3 className='donate'>Donate 0.01 SOL and pump our bags
           </h3>
       </div>
     )
