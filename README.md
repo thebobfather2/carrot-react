@@ -10,9 +10,9 @@
   <li>Also change the Solana fee on line 36 (Solana has 9 decimals, 100_000_000 = 0.1 Solana)</li>
   <li>Change the description on line 170 in Home.jsx</li>
   <li>yarn start (to run on local server)</li>
-  <li>yarn build (builds an easy to deploy version)<li>
+  <li>yarn build (builds an easy to deploy version)</li>
   <li>Upload your build folder to GitHub, you can then deploy for free at vercel.com</li>
  </ul>
 
-<h1>Powered by Bobby Rabbits</h1>
+<h3>Powered by Bobby Rabbits</h3>
 
