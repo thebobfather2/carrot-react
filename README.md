@@ -14,5 +14,5 @@
   <li>Upload your build folder to GitHub, you can then deploy for free at vercel.com</li>
  </ul>
 
-Powered by Bobby Rabbits
+<h1>Powered by Bobby Rabbits</h1>
 
