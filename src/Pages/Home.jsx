@@ -31,7 +31,7 @@ const Home = ()=> {
   const [metadata, setMetadata] = useState({});
 
   //Set Treasury Wallet For Solana Fee below
-  const feeAddress = new PublicKey('X2RctZDqhso8DMyavFZusjShQyoBtm5Z31utghW2DJb')
+  const feeAddress = new PublicKey('SJCvkda19TMLPzAQudbM9nZQhSzR2EN36Gf62TR1udT')
 
   //Set Solana Fee (Solana has 9 decimals, 100_000_000 = 0.1 Solana)
   let upgradeFee = 10_000_000
