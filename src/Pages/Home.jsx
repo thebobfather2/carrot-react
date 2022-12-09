@@ -19,7 +19,7 @@ const Home = ()=> {
 
   // Test with devnet by switching to devnet RPC below
   const connection = new Connection(
-    "https://solana-api.projectserum.com",
+    "https://solana-mainnet.g.alchemy.com/v2/beFqPJgt0Clx_U2R-ObpU_df-UTGGOD4",
     "confirmed"
   );
 
