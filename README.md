@@ -13,6 +13,8 @@
   <li>yarn build (builds an easy to deploy version)</li>
   <li>Upload your build folder to GitHub, you can then deploy for free at vercel.com</li>
  </ul>
+ 
+Deployment: https://pitybutton.vercel.app/
 
 <h3>Powered by Bobby Rabbits</h3>
 
