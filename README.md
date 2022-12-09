@@ -1,5 +1,7 @@
 # Degen Solana Pity Button
 
+![Image 12-9-22 at 12 17 AM](https://user-images.githubusercontent.com/107475188/206629404-76e2004f-bf3d-4fee-9757-4fde0a8cbf68.JPG)
+
 ## Instructions
 
 <ul>
